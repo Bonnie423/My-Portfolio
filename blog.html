@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <!--Font Awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+    <a href="index.html"></a>
+    <title>My Blog</title>
+  </head>
+</html>
+<body>
+  <a href="index.html"><button class="back-btn">Back</button></a>
+  <h2>
+    What are the differences between relative, absolute, and fixed positioning?
+  </h2>
+  <h3>Relative Positioning</h3>
+  <p>
+    <b>Relative to Normal Flow:</b>Elements with relative positioning are
+    positioned relative to their normal position in the document's flow. This
+    means they still occupy space in the document flow, and nearby elements are
+    not affected.<br />
+    <b>Offset Properties:</b> You can use properties like<b> top</b>,
+    <b> right</b>,<b> bottom</b>, and<b> left</b> to shift the element from its
+    normal position.<br /><b>Example:</b>If you set position: relative;
+    <b>top</b>: 20px;, the element will be moved 20 pixels down from its
+    original position within the normal flow.
+  </p>
+  <h3>Absolute Positioning:</h3>
+  <p>
+    <b>Relative to Closest Positioned Ancestor:</b> Elements with absolute
+    positioning are positioned relative to their closest positioned (non-static)
+    ancestor. If no such ancestor exists, they are positioned relative to the
+    initial containing block (usually the viewport). <br />
+    <b>Taken Out of Normal Flow: </b>Elements with absolute positioning are
+    taken out of the normal document flow, which means they do not affect the
+    layout of nearby elements.<br />
+    <b>Offset Properties:</b> You can use properties like<b> top</b>,
+    <b>right</b>, <b>bottom</b>, and<b> left </b>to specify the exact position
+    of the element relative to its ancestor.<br /><b>Example:</b> If you set
+    position: absolute; <b>top</b>: 0; <b>left</b> : 0; the element will be
+    positioned at the top-left corner of its closest positioned ancestor.
+  </p>
+  <h3>Fixed Positioning:</h3>
+  <p>
+    <b>Relative to the Viewport:</b> Elements with fixed positioning are
+    positioned relative to the viewport, which means they stay in the same
+    position even when the page is scrolled.<br /><b>
+      Taken Out of Normal Flow:</b
+    >
+    Like absolute positioning, elements with fixed positioning are taken out of
+    the normal document flow.<br /><b> Offset Properties:</b> You can use<b>
+      top</b
+    >, <b>right</b>, <b>bottom</b> , and<b> left</b> to specify the exact
+    position of the element relative to the viewport.<br />
+    <b>Example:</b> If you set position: <b>fixed</b>; <b>top</b>: 0;
+    <b>right</b>: 0; the element will be positioned at the top-right corner of
+    the viewport and stay there while scrolling.
+  </p>
+</body>
