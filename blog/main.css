@@ -4,14 +4,16 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  display: grid;
 }
 
 header {
   width: 100%;
   position: relative;
   top: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
   padding: 40px 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: auto;
@@ -52,6 +54,7 @@ header {
   .nav-container .nav {
     flex-direction: column; /* Stack items vertically */
     padding: 0;
+    align-items: end;
   }
 
   .nav-container .nav ul {
@@ -62,7 +65,7 @@ header {
     height: auto;
   }
   .goal {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -99,22 +102,26 @@ header {
   width: 100%;
   position: relative;
   top: 80px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  /* justify-content: space-around; */
+  grid-template-columns: 65% 35%;
   align-items: center;
   padding-bottom: 100px;
 }
 
-.goal {
-  font-size: 58px;
-  margin: 0 auto;
-  line-height: 1.2;
+@media screen and (min-width: 600px) {
+  .goal {
+    font-size: 58px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
 }
 
 .pro-img {
   width: 350px;
   border-radius: 30px;
   margin: 0 80px 50px 0;
+  margin: 0 auto;
 }
 
 .this-is-me-container {
@@ -140,4 +147,20 @@ header {
   top: 80px;
   margin: 0 auto;
   line-height: 2;
+}
+
+/* blog page */
+
+.back-btn {
+  padding: 10px;
+  background-color: antiquewhite;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+h2,
+h3,
+p {
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
