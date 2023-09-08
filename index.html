@@ -12,11 +12,11 @@
       referrerpolicy="no-referrer"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>My Blog</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="profile">
         <div class="pro-name"><b>I'm Bonnie Wang</b></div>
         <div class="pro-intro">
@@ -24,29 +24,20 @@
         </div>
       </div>
       <nav class="nav-container">
-        <div class="nav" id="top-nav">
-          <a class="nav-icon" onclick="addResponsive()"
-            ><i class="fa fa-bars"></i
-          ></a>
-          <ul>
-            <li>
-              <a href="#home"> Home </a>
-            </li>
-            <li>
-              <a href="blog.html"> Blog </a>
-            </li>
-            <li>
-              <a href="#projects"> Projects </a>
-            </li>
-            <li>
-              <a href="#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="icon-button">
-          <i class="fab fa-facebook-f" id="f-btn"></i>
-          <i class="fa-brands fa-linkedin-in" id="l-btn"></i>
-        </div> -->
+        <ul>
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li>
+            <a href="blog/blog.html"> Blog </a>
+          </li>
+          <li>
+            <a href="#projects"> Projects </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -63,21 +54,46 @@
       </div>
 
       <img
-        src="pro-img.jpg"
+        src="images/pro-img.jpg"
         alt="Bonnie is smailing at the camera"
         class="pro-img"
       />
     </div>
-    <div class="this-is-me-container">
-      <div class="yellow-bg this-is-me">
-        <p class="this-is-me-content">This is <b>me</b></p>
+    <div class="this-is-me-container light-color-bg">
+      <div class="yellow-bg yellow-box">
+        <p class="bold-text">This is <b>me</b></p>
       </div>
       <p class="intro-content">
         Hi, I am Bonnie Wang. I am or I will be a frontend focused web
         Developer,building the frontend website or web applications that leads
         to the success of overall product.
       </p>
+      <div class="skills">
+        <div class="flex-box">
+          <p class="grey-bg">HTML</p>
+          <p class="white-bg">CSS</p>
+          <p class="black-bg">JavaScript</p>
+        </div>
+        <div class="flex-box">
+          <p class="black-bg">React</p>
+          <p class="grey-bg">Git</p>
+        </div>
+      </div>
     </div>
     <script src="home.js"></script>
   </body>
+  <footer>
+    <div class="footer-content">
+      <p><i class="fa-solid fa-phone"></i> Phone: 64-21-882-666</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: Bonnie.Wang@gmail.com</p>
+
+      <a href="https://github.com/Bonnie423"
+        ><p><i class="fa-brands fa-github"> Check my github here</i></p></a
+      >
+
+      <a href="#"
+        ><button class="back-to-top-btn yellow-bg">Back to Top</button></a
+      >
+    </div>
+  </footer>
 </html>
