@@ -83,6 +83,7 @@ header {
   height: 10vw;
   position: relative;
   margin: 7vw 0 4vw;
+  display: block;
 }
 .bold-text {
   font-size: 3.2vw;
@@ -162,17 +163,21 @@ footer a:hover {
   border-radius: 5px;
 }
 
-/* h2,
-h3,
-p {
-  padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
+.blog-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+@media screen and (width <= 600px) {
+  .blog-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .blog-imgs {
-  width: 50vw;
-  height: 30vw;
+  width: 30vw;
+  height: 20vw;
 
-  margin: 5vw auto;
+  margin: 2vw auto 5vw;
 }
 .blog-imgs p {
   position: relative;
@@ -186,6 +191,9 @@ p {
   color: #fff;
   font-size: 2vw;
 }
+.blog-imgs a {
+  text-decoration: none;
+}
 
 .vallue-identity {
   background: url(../images/value.webp) no-repeat center center/cover;
@@ -193,4 +201,13 @@ p {
 
 .learning-plan {
   background: url(../images/plan.webp) no-repeat center center/cover;
+}
+.eq {
+  background: url(../images/eq.jpg) no-repeat center center/cover;
+}
+
+/* eq page */
+
+.eq-section {
+  padding: 3vw;
 }
