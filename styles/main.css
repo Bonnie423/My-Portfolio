@@ -209,6 +209,9 @@ footer a:hover {
 .dom {
   background: url(../images/dom.jpg) no-repeat center center/cover;
 }
+.pro-solving {
+  background: url(../images/problem-solving.jpg) no-repeat center center/cover;
+}
 
 /* eq page */
 
@@ -217,7 +220,7 @@ footer a:hover {
 }
 /* js fondamental page */
 
-.dom-container {
+.content-container {
   padding: 3vw;
 
   margin: 5px auto;
@@ -225,7 +228,15 @@ footer a:hover {
 .relations,
 .functions,
 .example-of-dom,
-.contrl-flow {
-  border: solid black 2px;
+.contrl-flow,
+.blocked-problem,
+.elegantly-solved {
+  border: solid black 1px;
   padding: 3vw;
+  /* font-weight: 400; */
+}
+
+/* problem-solving page */
+.elegantly-solved {
+  margin-top: 10px;
 }
