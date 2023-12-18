@@ -29,9 +29,9 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between max-auto px-4 py-2">
         <Link
           href={'/'}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-xl md:text-2xl text-white font-semibold"
         >
-          Bonnie Wang{' '}
+          Welcome to my portfolio{' '}
         </Link>
         {/* mobile navbar */}
         <div className="mobile-menu blcok md:hidden">

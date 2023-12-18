@@ -17,7 +17,7 @@ const HeadSection = () => {
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 ' Bonnie Wang',
-                1000, // wait 1s 
+                1000, // wait 1s
                 'Web Developer',
                 1000,
                 // 'Full Stack Developer',
@@ -37,7 +37,7 @@ const HeadSection = () => {
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full  bg-transparent bg-gradient-to-br from-teal-700 via-teal-500 to-pink-500 hover:bg-slate-800 text-white  mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
-                Downlocad CV
+                Download CV
               </span>
             </button>
           </div>
