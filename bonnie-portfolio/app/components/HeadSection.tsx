@@ -18,7 +18,7 @@ const HeadSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 ' Bonnie Wang',
                 1000, // wait 1s
-                'Web Developer',
+                'A Web Developer',
                 1000,
                 // 'Full Stack Developer',
                 // 1000,

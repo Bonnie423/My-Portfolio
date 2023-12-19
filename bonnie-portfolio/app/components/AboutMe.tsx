@@ -24,8 +24,8 @@ const TAB_DATA =[
   title: 'education',
   id: 'education',
   content: (
-    <ul>
-      <li>New Zealand Certificate in Applied Software Development(Level 6)</li>
+    <ul className='list-disc pl-2'>
+      <li>New Zealand Certificate in Applied Software Development (Level 6)</li>
       <li>New Zealand Certificate in Information Technology Essentials (Level 4)</li>
       
     </ul>
@@ -35,7 +35,7 @@ const TAB_DATA =[
   title: 'experience',
   id: 'experience',
   content: (
-    <ul>
+    <ul className='list-disc pl-2'>
       <li>Customer Service Manager, Colliers International – Shenzhen, China. 08/2018-03/2019</li>
       <li>Reception Supervisor, China Resources Property Management – Shenzhen. 05/2016-08/2018</li>
       <li>Guest Service Manager, Royal Suites and Towers Hotel – Shenzhen, China. 08/2012-09/2016</li>

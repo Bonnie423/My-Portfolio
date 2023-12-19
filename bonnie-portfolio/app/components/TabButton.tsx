@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const TabButton = ({ isActive, selectTab, children }) => {
-  const buttonClasses = isActive ? 'text-white border-b border-teal-500' : 'text-[#ADB7BE]'
+interface TabButtonProps {
+  isActive: boolean;
+  selectTab: () => void;
+  children: ReactNode;
+}
+const TabButton = ({ isActive, selectTab, children }: TabButtonProps) => {
+  const buttonClasses = isActive ? 'text-white border-b-4 border-teal-500' : 'text-[#ADB7BE]'
   return (
     <button onClick={selectTab}>
       <p className={`mr-3 font-semibold hover:text-white ${buttonClasses} `}>
         {children}
       </p>
+      
     </button>
   )
 }
