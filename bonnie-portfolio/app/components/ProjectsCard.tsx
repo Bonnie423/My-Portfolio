@@ -6,7 +6,7 @@ interface Props {
   title: string
   description: string
   gitUrl: string
-  previewUrl: string
+  previewUrl: string | null
   tech:string
 }
 const ProjectsCard = ({
@@ -42,7 +42,7 @@ const ProjectsCard = ({
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
         
-        <p className="text-[#ADB7BE] pt-4">Main Tech Stack: {tech}</p>
+        <p className="text-[#ADB7BE] pt-4">Tech Stack: {tech}</p>
         {previewUrl? <Link href={previewUrl} className='pt-4 text-teal-500'>View the website</Link> : null}
       </div>
     </div>

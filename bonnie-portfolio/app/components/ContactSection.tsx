@@ -4,11 +4,10 @@ import LinkedinIcon from '../../public/linkedin-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
-
 const ContactSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
-      <div>
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id='contact'>
+      <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -18,10 +17,13 @@ const ContactSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Bonnie423" target='blank'>
-          <Image src={GithubIcon} alt="Github icon" />
+          <Link href="https://github.com/Bonnie423" target="blank">
+            <Image src={GithubIcon} alt="Github icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/bonnie-wang-3887b1248/" target='blank'>
+          <Link
+            href="https://www.linkedin.com/in/bonnie-wang-3887b1248/"
+            target="blank"
+          >
             <Image src={LinkedinIcon} alt="Linkedin icon" />
           </Link>
         </div>

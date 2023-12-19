@@ -1,7 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectsCard from './ProjectsCard'
 import ProjectTags from './ProjectTags'
+import { motion, useInView } from 'framer-motion'
 const projectsData = [
   {
     id: 1,
@@ -12,7 +13,7 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: '/',
     previewUrl: '/',
-    tech_stack: 'Next.js, React, Tailwind, Typescript'
+    tech_stack: 'Next.js, React, Tailwind, Typescript.',
   },
   {
     id: 2,
@@ -23,7 +24,7 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/Rolly-Animal-Shelter',
     previewUrl: 'https://rolly-animal-shelter-2023.pushed.nz/',
-    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, SQLite'
+    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, SQLite.',
   },
   {
     id: 3,
@@ -34,7 +35,8 @@ const projectsData = [
     tag: ['All', 'Group'],
     gitUrl: 'https://github.com/Bonnie423/VIBESVAULT',
     previewUrl: null,
-    tech_stack: 'React, Typescript, Redix, Node.js, Express.js, knex.js, SQLite, Spotify API, React-Spotify-web-playback.'
+    tech_stack:
+      'React, Typescript, Redix, Node.js, Express.js, knex.js, SQLite, Spotify API, React-Spotify-web-playback.',
   },
   {
     id: 4,
@@ -45,7 +47,7 @@ const projectsData = [
     tag: ['All', 'Group'],
     gitUrl: 'https://github.com/Bonnie423/Virtual-Desk-Calendar',
     previewUrl: null,
-    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, WebAPI.'
+    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, WebAPI.',
   },
   {
     id: 5,
@@ -55,11 +57,14 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/Todos',
     previewUrl: null,
-    tech_stack: 'React, Typescript, Bootstrap, Node.js, Express.js, knex.js, SQLite'
+    tech_stack:
+      'React, Typescript, Bootstrap, Node.js, Express.js, knex.js, SQLite.',
   },
 ]
 const Projects = () => {
   const [tag, setTag] = useState('All')
+  const ref = useRef(null)
+  const isInview = useInView(ref, { once: true })
   const handleTagChanges = (newTag: string) => {
     setTag(newTag)
   }
@@ -67,8 +72,13 @@ const Projects = () => {
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
   )
+
+  const cardVariants ={
+    initial: {y:50, opacity:0},
+    animate: {y:0, opacity:1}
+  }
   return (
-    <section>
+    <section id='projects'>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -90,17 +100,19 @@ const Projects = () => {
         />
       </div>
 
-      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project) => (
-          <ProjectsCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-            gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
-            tech={project.tech_stack}
-          />
+      <ul  ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {filteredProjects.map((project,index) => (
+          <motion.li key={project.id} variants={ cardVariants} initial='initial' animate={isInview? 'animate' : 'initial'}  transition={{duration:0.3 , delay: index * 0.4}}>
+            <ProjectsCard
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}
+              tech={project.tech_stack}
+             
+            />
+          </motion.li>
         ))}
       </ul>
     </section>
