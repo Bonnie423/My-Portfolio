@@ -3,16 +3,16 @@ import React, { useState } from 'react'
 import ProjectsCard from './ProjectsCard'
 import ProjectTags from './ProjectTags'
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: 'My Portfolio Website',
-  //   description:
-  //     'My portfolio website that showcases my skills, experiences, and projects that reflect my journey in IT industry.',
-  //   image: '/images/projects/portfolio.png',
-  //   tag: ['All', 'Solo'],
-  //   gitUrl: '/',
-  //   previewUrl: '/'
-  // },
+  {
+    id: 1,
+    title: 'My Portfolio Website',
+    description:
+      'My portfolio website that showcases my skills, experiences, and projects that reflect my journey in IT industry.',
+    image: '/images/projects/portfolio.png',
+    tag: ['All', 'Solo'],
+    gitUrl: '/',
+    previewUrl: '/'
+  },
   {
     id: 2,
     title: 'Rolly Animal Shelter',
@@ -59,8 +59,8 @@ const Projects = () => {
     setTag(newTag)
   }
 
-  const filteredProjects=projectsData.filter((project)=>
-    project.tag.includes(tag) 
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
   )
   return (
     <section>
@@ -68,11 +68,24 @@ const Projects = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTags onClick={handleTagChanges} name='All' isSelected={tag==='All'}/>
-        <ProjectTags onClick={handleTagChanges} name='Solo' isSelected={tag==='Solo'}/>
-        <ProjectTags onClick={handleTagChanges} name='Group' isSelected={tag==='Group'}/>
+        <ProjectTags
+          onClick={handleTagChanges}
+          name="All"
+          isSelected={tag === 'All'}
+        />
+        <ProjectTags
+          onClick={handleTagChanges}
+          name="Solo"
+          isSelected={tag === 'Solo'}
+        />
+        <ProjectTags
+          onClick={handleTagChanges}
+          name="Group"
+          isSelected={tag === 'Group'}
+        />
       </div>
-      <div>
+
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) => (
           <ProjectsCard
             key={project.id}
@@ -83,7 +96,7 @@ const Projects = () => {
             previewUrl={project.previewUrl}
           />
         ))}
-      </div>
+      </ul>
     </section>
   )
 }

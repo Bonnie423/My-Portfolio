@@ -8,7 +8,13 @@ interface Props {
   gitUrl: string
   previewUrl: string
 }
-const ProjectsCard = ({ imgUrl, title, description, gitUrl, previewUrl }: Props) => {
+const ProjectsCard = ({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+}: Props) => {
   return (
     <div>
       <div

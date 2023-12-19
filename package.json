@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "resend": "^2.0.0"
   }
 }
