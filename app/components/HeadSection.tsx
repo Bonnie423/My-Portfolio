@@ -41,7 +41,7 @@ const HeadSection = () => {
               Hire Me
             </button>
             </Link>
-            <Link href='https://drive.google.com/file/d/1tVkqv2FhZi10euxByorlUEI2FOBts8rN/view?usp=drive_link' target='blank'>
+            <Link href='https://drive.google.com/file/d/1O_84YkxQmK0iHvmxH-CGuVwpQiSUy7uU/view?usp=drive_link' target='blank'>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full  bg-transparent bg-gradient-to-br from-teal-700 via-teal-500 to-pink-500 hover:bg-slate-800 text-white  mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
                 Download CV
