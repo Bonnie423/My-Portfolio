@@ -11,7 +11,8 @@ const projectsData = [
     image: '/images/projects/portfolio.png',
     tag: ['All', 'Solo'],
     gitUrl: '/',
-    previewUrl: '/'
+    previewUrl: '/',
+    tech_stack: 'Next.js, React, Tailwind, Typescript'
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/Rolly-Animal-Shelter',
     previewUrl: 'https://rolly-animal-shelter-2023.pushed.nz/',
+    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, SQLite'
   },
   {
     id: 3,
@@ -30,8 +32,9 @@ const projectsData = [
       'a collaborative music platform where users can create and share playlists with friends, family, or colleagues.',
     image: '/images/projects/playlist.png',
     tag: ['All', 'Group'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/Bonnie423/VIBESVAULT',
+    previewUrl: null,
+    tech_stack: 'React, Typescript, Redix, Node.js, Express.js, knex.js, SQLite, Spotify API, React-Spotify-web-playback.'
   },
   {
     id: 4,
@@ -40,8 +43,9 @@ const projectsData = [
       'Offering a dynamic display of the date, weather updates, captivating images, and uplifting affirmations',
     image: '/images/projects/calendar.png',
     tag: ['All', 'Group'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/Bonnie423/Virtual-Desk-Calendar',
+    previewUrl: null,
+    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, WebAPI.'
   },
   {
     id: 5,
@@ -49,8 +53,9 @@ const projectsData = [
     description: 'A platform designed to help you manage your tasks.',
     image: '/images/projects/todos.png',
     tag: ['All', 'Solo'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/Bonnie423/Todos',
+    previewUrl: null,
+    tech_stack: 'React, Typescript, Bootstrap, Node.js, Express.js, knex.js, SQLite'
   },
 ]
 const Projects = () => {
@@ -94,6 +99,7 @@ const Projects = () => {
             imgUrl={project.image}
             gitUrl={project.gitUrl}
             previewUrl={project.previewUrl}
+            tech={project.tech_stack}
           />
         ))}
       </ul>

@@ -4,6 +4,7 @@ import { Container } from 'postcss'
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
+import ContactSection from './components/ContactSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <HeadSection />
     <AboutMe />
     <Projects />
+    <ContactSection />
     </div>
     </main>
   )
