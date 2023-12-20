@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import SkillsSection from './components/SkillsSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <Navbar />
     <div className='container  mt-24 mx-auto px-12 py-4'>
     <HeadSection />
+    <SkillsSection />
     <AboutMe />
     <Projects />
     <ContactSection />
