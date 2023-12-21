@@ -1,5 +1,6 @@
-import React from 'react'
-
+"use client"
+import React, { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 const skillsData = [
   {
     skill1: 'Next.js',
@@ -27,18 +28,25 @@ const skillsData = [
   },
 ]
 const SkillsSection = () => {
+  const ref = useRef(null)
+  const isInview = useInView(ref, { once: true })
+  const cardVariants ={
+    initial: {y:50, opacity:0},
+    animate: {y:0, opacity:1}
+  }
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="border-[#33353F] border rounded-md py-8 px-17 flex flex-row items-center justify-between">
+    <div ref={ref} className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {skillsData.map((skill, index) => {
           return (
-            <div
+            <motion.div
               key={index}
-              className="flex flex-col items-center justify-center mx-4"
+              variants={ cardVariants} initial='initial' animate={isInview? 'animate' : 'initial'}  transition={{duration:0.3 , delay: index * 0.4}}
+              className="flex flex-col items-center justify-center mx-4 sm:my-0"
             >
-              <h2 className="text-white text-xl font-bold">{skill.skill1}</h2>
+              <h2 className="text-white text-xl font-bold flex flex-row">{skill.skill1}</h2>
               <p className="text-[#ADB7BE] text-base">{skill.skill2}</p>
-            </div>
+            </motion.div>
           )
         })}
       </div>

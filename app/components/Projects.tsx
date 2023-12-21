@@ -11,7 +11,7 @@ const projectsData = [
       'My portfolio website that showcases my skills, experiences, and projects that reflect my journey in IT industry.',
     image: '/images/projects/portfolio.png',
     tag: ['All', 'Solo'],
-    gitUrl: '/',
+    gitUrl: 'https://github.com/Bonnie423/My-Portfolio',
     previewUrl: '/',
     tech_stack: 'Next.js, React, Tailwind, Typescript.',
   },
