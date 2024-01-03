@@ -63,7 +63,7 @@ const AboutMe = () => {
   }
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-6 px-4 xl:gap-16 sm:py-16">
         <Image
           src="/images/coding.jpg"
           alt="computer with vscode"
@@ -74,15 +74,32 @@ const AboutMe = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <div className="text-base lg:text-lg">
-            <p>
-              I&apos;m a dedicated Full Stack Developer with a skill set in both
-              frontend and backend technologies.
+            <h4 className="mb-4">
+              🚀 Passionate Full Stack Developer | Lifelong Learner
+            </h4>
+
+            <p className="mb-1">
+              I&apos;m a dedicated full stack developer with a comprehensive
+              skill set in both frontend and backend technologies. My journey
+              into the world of coding began with a curiosity to understand how
+              technology shapes our digital landscape, and it has evolved into a
+              passion for creating seamless, user-centric web applications.
+            </p>
+            <p className="mb-1">
+              I am proficient in TypeScript, React, Next.js, Node.js, and SQL
+              database. I thrive on solving complex problems through innovative
+              and efficient coding practices.
+            </p>
+            <p className="mb-2">
+              I thrive in both team collaborations and working independently. My
+              adaptable nature allows me to contribute effectively to a team
+              environment while also being self-driven in solo projects.
             </p>
             <p>
-              I am proficient in TypeScript, React , node.js and SQL databases.
-              I thrive on solving complex problems through innovative and
-              efficient coding practices. I am committed to delivering
-              highquality solutions.
+              When not immersed in coding, you&apos;ll find me pursuing my
+              passion for running and hiking, exploring the great outdoors. As a
+              travel lover, I cherish learning about different cultures and
+              connecting with people from diverse backgrounds.
             </p>
           </div>
           <div className="flex flex-row justify-start mt-8">
