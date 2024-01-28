@@ -32,8 +32,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'certificate',
-    id: 'certificate',
+    title: 'certification',
+    id: 'certification',
     content: (
       <ul className="list-disc pl-2">
         <li>
@@ -128,10 +128,10 @@ const AboutMe = () => {
               Education
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('certificate')}
-              isActive={tab === 'certificate'}
+              selectTab={() => handleTabChange('certification')}
+              isActive={tab === 'certification'}
             >
-              Certificate
+              Certification
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange('experience')}
