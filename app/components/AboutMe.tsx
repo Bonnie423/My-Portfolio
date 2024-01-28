@@ -32,6 +32,18 @@ const TAB_DATA = [
     ),
   },
   {
+    title: 'certificate',
+    id: 'certificate',
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+        Microsoft Certified: Azure Fundamentals
+        </li>
+        
+      </ul>
+    ),
+  },
+  {
     title: 'experience',
     id: 'experience',
     content: (
@@ -41,7 +53,7 @@ const TAB_DATA = [
           08/2018-03/2019
         </li>
         <li>
-          Reception Supervisor, China Resources Property Management – Shenzhen.
+          Reception Supervisor, China Resources Property Limited – Shenzhen.
           05/2016-08/2018
         </li>
         <li>
@@ -114,6 +126,12 @@ const AboutMe = () => {
               isActive={tab === 'education'}
             >
               Education
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange('certificate')}
+              isActive={tab === 'certificate'}
+            >
+              Certificate
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange('experience')}

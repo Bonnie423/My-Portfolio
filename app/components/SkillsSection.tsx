@@ -26,6 +26,7 @@ const skillsData = [
     skill1: 'Tailwind',
     skill2: 'CSS',
   },
+
 ]
 const SkillsSection = () => {
   const ref = useRef(null)
