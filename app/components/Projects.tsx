@@ -13,7 +13,7 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/My-Portfolio',
     previewUrl: '/',
-    tech_stack: 'Next.js, React, Tailwind, Typescript.',
+    tech_stack: 'Next.js, React, Tailwind, TypeScript.',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projectsData = [
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/Rolly-Animal-Shelter',
     previewUrl: 'https://rolly-animal-shelter-2023.pushed.nz/',
-    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, SQLite.',
+    tech_stack: 'React, TypeScript, CSS, Node.js, Express.js, knex.js, SQLite.',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projectsData = [
     gitUrl: 'https://github.com/Bonnie423/VIBESVAULT',
     previewUrl: null,
     tech_stack:
-      'React, Typescript, Redix, Node.js, Express.js, knex.js, SQLite, Spotify API, React-Spotify-web-playback.',
+      'React, TypeScript, Redix, Node.js, Express.js, knex.js, SQLite, Spotify API, React-Spotify-web-playback.',
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const projectsData = [
     tag: ['All', 'Group'],
     gitUrl: 'https://github.com/Bonnie423/Virtual-Desk-Calendar',
     previewUrl: null,
-    tech_stack: 'React, Typescript, CSS, Node.js, Express.js, knex.js, WebAPI.',
+    tech_stack: 'React, TypeScript, CSS, Node.js, Express.js, knex.js, WebAPI.',
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const projectsData = [
     gitUrl: 'https://github.com/Bonnie423/Todos',
     previewUrl: null,
     tech_stack:
-      'React, Typescript, Bootstrap, Node.js, Express.js, knex.js, SQLite.',
+      'React, TypeScript, Bootstrap, Node.js, Express.js, knex.js, SQLite.',
   },
 ]
 const Projects = () => {
