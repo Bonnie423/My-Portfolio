@@ -23,7 +23,7 @@ const projectsData = [
     image: '/images/projects/animal-shelter.png',
     tag: ['All', 'Solo'],
     gitUrl: 'https://github.com/Bonnie423/Rolly-Animal-Shelter',
-    previewUrl: 'https://rolly-animal-shelter-2023.pushed.nz/',
+    previewUrl: null,
     tech_stack: 'React, TypeScript, CSS, Node.js, Express.js, knex.js, SQLite.',
   },
   {
